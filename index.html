@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Syllable Counter</title>
+    <link href="./stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">
+        <h1>Input</h1>
+        <textarea id="input"></textarea>
+      </div>
+      <div class="child">
+        <h1>Output</h1>
+        <div id="output">
+
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import {syllable} from 'https://esm.sh/syllable@5?bundle'
+      
+      const input = document.getElementById('input')
+      const output = document.getElementById('output')
+
+      input.addEventListener('input', () => {
+        const val = input.value
+        
+      })
+    </script>
+  </body>
+</html>
