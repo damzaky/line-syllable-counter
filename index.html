@@ -24,7 +24,14 @@
 
       input.addEventListener('input', () => {
         const val = input.value
-        
+
+        const res = val.split('\n').map(line => {
+          const syl = syllable(line)
+
+          return syl > 0 ? `${line} ${syl}` : line
+        })
+
+        output.innerText = res.join('\n')
       })
     </script>
   </body>
